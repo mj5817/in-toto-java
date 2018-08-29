@@ -41,19 +41,19 @@ class LinkTest
 	private Key key = RSAKey.read("src/test/resources/somekey.pem");
 	
 	@Rule
-    public TemporaryFolder temporaryFolder = new TemporaryFolder();
-    
-    
-	@Rule public ExpectedException thrown = ExpectedException.none();
+	public TemporaryFolder temporaryFolder = new TemporaryFolder();
+	
+	@Rule
+	public ExpectedException thrown = ExpectedException.none();
 	
 	@Test
 	@DisplayName("Test Link Constructor")
-    public void testLinkContructorEqual()
-    {
-        // test a link object
-        
-        assertEquals("test",link.getName());
-        assertNotEquals(null,link.getName());
+	public void testLinkContructorEqual()
+	{
+		// test a link object
+		
+		assertEquals("test",link.getName());
+		assertNotEquals(null,link.getName());
 	}
 	
 	@Test
