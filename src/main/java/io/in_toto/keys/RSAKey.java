@@ -222,10 +222,11 @@ public class RSAKey
         try {
 			
             if (privateKey && getPrivate() != null)
-				pemWriter.writeObject(new MiscPEMGenerator(this.kpr.getPrivateKeyInfo()));
+	    pemWriter.writeObject(new MiscPEMGenerator(this.kpr.getPrivateKeyInfo()));
             else
-				pemWriter.writeObject(new MiscPEMGenerator(this.kpr.getPublicKeyInfo()));
-            pemWriter.flush();
+	    pemWriter.writeObject(new MiscPEMGenerator(this.kpr.getPublicKeyInfo()));
+            
+	    pemWriter.flush();
         } catch (IOException e) {
             throw new RuntimeException(e.toString());
         }
