@@ -22,6 +22,7 @@ import org.bouncycastle.crypto.Signer;
 import org.bouncycastle.crypto.util.PrivateKeyFactory;
 import org.bouncycastle.crypto.util.PublicKeyFactory;
 import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
+import org.bouncycastle.crypto.digests.SHA256Digest;
 import org.bouncycastle.crypto.signers.PSSSigner;
 import org.bouncycastle.crypto.engines.RSAEngine;
 
